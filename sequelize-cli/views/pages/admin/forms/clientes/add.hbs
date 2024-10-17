@@ -1,0 +1,36 @@
+<div class="container p-4" style="margin-top:70px ;"></div>
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">NUEVO CLIENTE</h3>
+                </div>
+                <div class="card-body">
+                    <form id="add" action="/admin/clientes" method="post">
+                        <div class="input-group mt-2">
+                            <label for="nombre" class="input-group-text">Nombre del cliente</label>
+                            <input class="form-control" type="text" name="nombre" id="nombre" maxlength="20" placeholder="Nombre" autofocus required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="direccion" class="input-group-text">Dirección</label>
+                            <input class="form-control" type="text" name="direccion" id="direccion" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="telefono" class="input-group-text">Teléfono</label>
+                            <input class="form-control" type="text" name="telefono" id="telefono" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="email" class="input-group-text">Correo</label>
+                            <input class="form-control" type="text" name="email" id="email" required>
+                        </div>
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success" type="submit"> Agregar</button>
+                            <button class="btn btn-danger"><a class="nav-link  link-light" aria-current="page"
+                                    href="/admin/clientes"> Cancelar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
